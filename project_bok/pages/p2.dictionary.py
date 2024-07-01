@@ -6,10 +6,10 @@ st.set_page_config(page_title="page2",page_icon=":smiley:")
 
 plt.rcParams['font.family'] = 'gulim'
 st.title('극성 사전')
-neg_dic = pd.read_csv("../neg_dic_total.csv")
-pos_dic = pd.read_csv("../pos_dic_total.csv")
-neg_sent = pd.read_csv("../do_ngram_minsent.csv")
-pos_sent = pd.read_csv("../hw_ngram_minsent.csv")
+neg_dic = pd.read_csv("streamlit_pub_test\data\neg_dic_total.csv")
+pos_dic = pd.read_csv("streamlit_pub_test\data\pos_dic_total.csv")
+neg_sent = pd.read_csv("streamlit_pub_test\data\do_ngram_minsent.csv")
+pos_sent = pd.read_csv("streamlit_pub_test\data\hw_ngram_minsent.csv")
 #----------------------------------------------------------------------------
 neg_10 = neg_dic.sort_values('Down', ascending=False).head(10)
 neg_10['neg_dic'] = neg_10['neg_dic'].apply(lambda x: x.split('/')[0])
