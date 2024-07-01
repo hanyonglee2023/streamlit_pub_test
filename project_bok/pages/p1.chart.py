@@ -9,7 +9,7 @@ st.set_page_config(page_title="page1",page_icon=":smiley:")
 st.title("Chart")
 
 # 데이터 불러오기
-data = pd.read_csv("streamlit_pub_test\data\doc_tone_base_rate.csv")
+data = pd.read_csv("streamlit_pub_test/data/doc_tone_base_rate.csv")
 
 # 데이터 프레임 변환
 df = pd.DataFrame(data)
